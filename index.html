@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
     <header>
@@ -29,47 +30,62 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Goku</td>
+                        <td><img src="./images/goku-avatar.png" class="avatar" alt="avatar"></td>
+                        <div class="middle1">
+                            <div class="text">Goku</div>
+                        </div>
                         <td>Jayden</td>
                         <td>Van Rooyen</td>
                         <td>20</td>
-                        <td bgcolor="red"><font color="white">red</font></td>
+                        <td class="td-red">red</td>
                         <td>Black</td>
                         <td>Soccer</td>
                     </tr>
                     <tr>
-                        <td>Batman</td>
+                        <td><img src="./images/batman-avatar.jpg" class="avatar" alt="avatar"></td>
+                        <div class="middle2">
+                            <div class="text">Batman</div>
+                        </div>
                         <td>Zen Lee</td>
                         <td>George</td>
                         <td>21</td>
-                        <td bgcolor="turquoise">turquoise</td>
+                        <td class="td-turquoise">turquoise</td>
                         <td>Red</td>
                         <td>Gaming</td>
                     </tr>
                     <tr>
-                        <td>Naruto</td>
+                        <td><img src="./images/naruto-avatar.jpg" class="avatar" alt="avatar"></td>
+                        <div class="middle3">
+                            <div class="text">Naruto</div>
+                        </div>
                         <td>Yonela</td>
                         <td>Mangele</td>
                         <td>24</td>
-                        <td bgcolor="lightblue">blue</td>
+                        <td class="td-blue">blue</td>
                         <td>Yellow</td>
                         <td>Running</td>
                     </tr>
                     <tr>
-                        <td>Iron Man</td>
+                        <td><img src="./images/iron-man-avatar.jpg" class="avatar" alt="avatar"></td>
+                        <div class="middle4">
+                            <div class="text">Iron<br>Man</div>
+                        </div>
                         <td>Marcus</td>
                         <td>Adonis</td>
                         <td>20</td>
-                        <td bgcolor="lightgreen">green</td>
+                        <td class="td-green">green</td>
                         <td>Purple</td>
                         <td>Swimming</td>
                     </tr>
                     <tr>
-                        <td>Captain America</td>
+                        <td><img src="./images/captain-america-avatar.webp" class="avatar" alt="avatar"></td>
+                        <div class="middle5">
+                            <div class="text">Captain<br>America</div>
+                        </div>
                         <td>Gwiba</td>
                         <td>Mabandla</td>
                         <td>21</td>
-                        <td bgcolor="red"><font color="white">red</font></td>
+                        <td class="td-red">red</td>
                         <td>Aqua</td>
                         <td>Coding</td>
                     </tr>
@@ -97,31 +113,29 @@
     </main>
     <footer>
         <h2>Let's get in touch</h2>
-        <form action="https://formsubmit.co/harriselvin6@gmail.com" method="POST" target="_blank">
+        <form action="https://formsubmit.co/harriselvin6@gmail.com" method="POST" target="_blank" class="form">
             <label for="name">
                 Name: 
                 <input type="text" required>
-            </label><br><br>
+            </label>
             <label for="surname">
                 Surname:
                 <input type="text" required>
-            </label><br><br>
+            </label>
             <label for="dob">
                 Date of Birth:
                 <input type="date" required>
-            </label><br><br>
+            </label>
             <label for="age">
                 Age:
                 <input type="number">
             </label>
             <p>Gender:</p>
-            <input type="radio" name="gender" id="Male">
-            <label for="Male">Male</label><br>
-            <input type="radio" name="gender" id="Female">
-            <label for="Female">Female</label><br><br>
+            <label for="Male" class="gender"><input type="radio" name="gender" id="Male">Male</label>
+            <label for="Female" class="gender"><input type="radio" name="gender" id="Female">Female</label>
             <label for="Nationality">
                 Nationality:
-                <select name="nationality">
+                <select name="nationality" class="nationality">
                     <option value="afghan">Afghan</option>
                     <option value="albanian">Albanian</option>
                     <option value="algerian">Algerian</option>
@@ -315,10 +329,10 @@
                     <option value="zambian">Zambian</option>
                     <option value="zimbabwean">Zimbabwean</option>
                   </select>
-            </label><br><br>
+            </label>
             <label for="ethnicity">
                 Ethnicity:
-                <select name="ethnicity">
+                <select name="ethnicity" class="ethnicity">
                     <option value="">-- select one --</option>
                     <option value="black">Black</option>
                     <option value="white">White</option>
@@ -326,12 +340,12 @@
                     <option value="indian">Indian</option>
                     <option value="other">Other</option>
                 </select>
-            </label><br><br>
+            </label>
             <label for="matric">
                 Year Matriculated (please use slider):
                 <input type="range" value="2000" min="1980" max="2023" oninput="this.nextElementSibling.value = this.value">
                 <output>2000</output>
-            </label><br><br>
+            </label>
             <button type="submit">Register</button>
         </form>
     </footer>
